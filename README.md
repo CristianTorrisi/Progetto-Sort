@@ -21,6 +21,36 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
 
 
 ## Time e Generator
+```java
+public static long measureExecutionTime(Runnable method) {
+        long startTime = System.nanoTime();
+        method.run();
+        long endTime = System.nanoTime();
+        return endTime - startTime;
+    }
+```
+```java
+public static int[] randomArray(int length, int lowerBound, int upperBound) {
+        Random random = new Random();
+        int[] ints = new int[length];
+        for (int i = 0; i < length; i++) {
+            ints[i] = random.nextInt(lowerBound, upperBound + 1);
+        }
+        return ints;
+    }
+```
+```java
+public static int[] randomArrayAscending(int length, int lowerBound, int upperBound) {
+        Random random = new Random();
+        int[] ints = new int[length];
+        for (int i = 0; i < length; i++) {
+            ints[i] = random.nextInt(lowerBound, upperBound + 1);
+            lowerBound = ints[i];
+        }
+        return ints;
+    }
+```
+
 
 
 
