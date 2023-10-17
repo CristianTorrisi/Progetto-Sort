@@ -25,9 +25,11 @@ public class Test {
         //Array degli elementi ordinati
         int[] array_sorted = new int[array.length];
         //Applico la funzione Insert Sort su array di interi
-        array_sorted = InsertionSort.returnSort(array);
+
         // Stampa array ordinato
         System.out.println(Arrays.toString(array_sorted));
+
+
 
 
 
