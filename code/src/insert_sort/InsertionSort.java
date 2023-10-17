@@ -27,5 +27,23 @@ public class InsertionSort {
         return array_sorted;
     }
 
+    /**
+     * Algoritmo di Insert Sort array sorgente da ordinare(inclusi i duplicati)
+     * @param array_source
+     */
+    public static void voidSort(int[] array_source){
+        int value_current;
+        int j;
 
+        for(int i=0; i<array_source.length;i++){
+            value_current = array_source[i];
+            j= i-1;
+
+            while (j>=0 && array_source[j] > value_current){
+                array_source[j+1] = array_source[j];
+                j =j -1;
+            }
+            array_source[j+1] = value_current;
+        }
+    }
 }
