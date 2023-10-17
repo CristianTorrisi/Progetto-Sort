@@ -1,5 +1,5 @@
 # Progetto di Laboratorio
-![image](![banner](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/c9232478-220d-463a-9ce5-99cb3b9bd84e))
+![image](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/c9232478-220d-463a-9ce5-99cb3b9bd84e)
 # Table of contents
 - [Insert Sort](#Insert-Sort)
 - [Bubble Sort](#Bubble-Sort)
@@ -10,12 +10,14 @@
 
 ## Insert Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Insert Sort che mi restituisce un array di numeri interi casuali ordinato. 
-- [Video Visualization](https://www.youtube.com/watch?v=Q1JdRUh1_98&ab_channel=ProfessorPainter)
+
+  ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/c0b0e6a4-bcd6-488d-b34e-8fca374e3c0a)
 
 
 ## Bubble Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Bubble Sort che mi restituisce un array di numeri interi casuali ordinato. 
-- [Video Visualization](https://www.youtube.com/watch?v=9I2oOAr2okY&ab_channel=4GeeksAcademy)
+
+ ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/fab1980e-6df4-4196-99a8-feff459e9e8b)
 
 
 ## Time e Generator
