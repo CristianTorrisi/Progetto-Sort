@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Generator {
@@ -32,5 +34,25 @@ public class Generator {
         }
         return ints;
     }
+
+    public static int[] randomArrayAscendingSimple(int length, int lowerBound, int upperBound) {
+        int[] ints = randomArray(length, lowerBound, upperBound);
+        Arrays.sort(ints);
+        return ints;
+    }
+
+    public static int[] randomArrayDescendingSimple(int length, int lowerBound, int upperBound) {
+        int[] ints = randomArray(length, lowerBound, upperBound);
+        Arrays.sort(ints);
+        return reverse(ints);
+    }
+
+    public static int[] reverse(int[] ints) {
+        int[] reverse = new int[ints.length];
+        for (int i = 0; i < ints.length; i++) reverse[i] = ints[ints.length - i - 1];
+        return reverse;
+    }
+
+
 }
 
