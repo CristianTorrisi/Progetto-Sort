@@ -2,7 +2,7 @@
 
 # Table of contents
 - [Insert Sort](#Insert-Sort)
-- [Bubble Sort](#bubble)
+- [Bubble Sort](#Bubble-Sort)
 - [Timer e Generator](#Time-e-generator)
 - [Test](#Test)
 - [Membri gruppo](#Membri-del-gruppo)
