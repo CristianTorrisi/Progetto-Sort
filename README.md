@@ -89,9 +89,10 @@ Execution Time di Bubble sort su randomArrayDescending(): 1790959 ns.
 ######################################## FINE ###########################################
 #########################################################################################
 ```
-# Membri del gruppo
+
 
 ## Membri del gruppo
+I membri partecipanti al lavoro di gruppo sono  Casagrande Stefano, Marchetti Greta,Torrisi Cristian e Cruciata Davide.
 
 
 
