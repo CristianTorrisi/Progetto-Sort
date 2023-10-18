@@ -228,25 +228,25 @@ Execution Time di Bubble sort su randomArrayDescending():    230632257 ns.
 ```
 ## Riassumendo
 ```
-Lunghezza = 10                              INSERTION SORT        BUBBLE SORT
-Execution Time su randomArray():            1089975               655794
-Execution Time su randomArrayAscending():   3918                  4258 
-Execution Time su randomArrayDescending():  4532                  7248
+Lunghezza = 10                              INSERTION SORT (ns)   BUBBLE SORT (ns)
+Execution Time su randomArray():            1.089.975             655.794
+Execution Time su randomArrayAscending():   3.918                 4.258 
+Execution Time su randomArrayDescending():  4.532                 7.248
 
 Lunghezza = 100
-Execution Time su randomArray():            786695                703961 
-Execution Time su randomArrayAscending():   8776                  7340
-Execution Time su randomArrayDescending():  78606                 216395
+Execution Time su randomArray():            786.695               703.961 
+Execution Time su randomArrayAscending():   8.776                 7.340
+Execution Time su randomArrayDescending():  78.606                21.6395
 
 Lunghezza = 1000
-Execution Time su randomArray():            5276820               11984810
-Execution Time su randomArrayAscending():   15631                 13465 
-Execution Time su randomArrayDescending():  2960514               14922974
+Execution Time su randomArray():            5.276.820             11.984.810
+Execution Time su randomArrayAscending():   15.631                13.465 
+Execution Time su randomArrayDescending():  2.960.514             14.922.974
 
 Lunghezza = 10000
-Execution Time su randomArray():            50798686              265722228 
-Execution Time su randomArrayAscending():   120592                76343
-Execution Time su randomArrayDescending():  47985447              230632257 
+Execution Time su randomArray():            50.798.686            265.722.228 
+Execution Time su randomArrayAscending():   120.592               76.343
+Execution Time su randomArrayDescending():  47.985.447            230.632.257 
 ```
 
 # Membri del gruppo
