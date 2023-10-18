@@ -9,7 +9,7 @@
 
 
 
-## Insert Sort 
+# Insert Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Insert Sort che mi restituisce un array di numeri interi casuali ordinato. 
 
   ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/c0b0e6a4-bcd6-488d-b34e-8fca374e3c0a)
@@ -33,7 +33,7 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
         return array_sorted;
     }
 ```
-# Analisi Complessità
+## Analisi Complessità
 Il  caso ottimo  per l'algoritmo è quello in cui la sequenza di partenza sia già ordinata. In questo caso, l'algoritmo ha tempo di esecuzione lineare, ossia 
 O(n).
 
@@ -42,7 +42,7 @@ Il caso pessimo è invece quello in cui la sequenza di partenza sia ordinata al 
 Pertanto, in questo caso l'algoritmo di insertion sort ha complessità temporale quadratica, ossia O(n^2)
 
 
-## Bubble Sort 
+# Bubble Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Bubble Sort che mi restituisce un array di numeri interi casuali ordinato. 
 
  ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/fab1980e-6df4-4196-99a8-feff459e9e8b)
@@ -69,7 +69,7 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
         }
     }
 ```
-## Time e Generator
+# Time e Generator
 ```java
 public static long measureExecutionTime(Runnable method) {
         long startTime = System.nanoTime();
@@ -108,7 +108,7 @@ public static long measureExecutionTime(Runnable method) {
     }
 ```
 
-## Test
+# Test
 ```
 #########################################################################################
 ######################################### 2TEAM #########################################
@@ -140,7 +140,7 @@ Execution Time di Bubble sort su randomArrayDescending(): 1790959 ns.
 ```
 
 
-## Membri del gruppo
+# Membri del gruppo
 I membri partecipanti al lavoro di gruppo sono:  
 - [Casagrande Stefano](https://github.com/csgs104)
 - [Marchetti Greta](https://github.com/gmarchettiuni)
