@@ -37,8 +37,29 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Bubble Sort che mi restituisce un array di numeri interi casuali ordinato. 
 
  ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/fab1980e-6df4-4196-99a8-feff459e9e8b)
-
-
+ 
+```java
+ public static void bubbleSort(int[] arr) {
+        int n = arr.length;
+        boolean swapped;
+        for (int i = 0; i < n - 1; i++) {
+            swapped = false;
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // Scambia arr[j] e arr[j + 1]
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+            // Se non è stato fatto nessuno scambio, l'array è già ordinato
+            if (!swapped) {
+                break;
+            }
+        }
+    }
+```
 ## Time e Generator
 ```java
 public static long measureExecutionTime(Runnable method) {
