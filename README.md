@@ -109,13 +109,96 @@ public static int[] randomArrayAscending(int length, int lowerBound, int upperBo
     }
 ```
 ```java
-public static long measureExecutionTime(Runnable method) {
-        long startTime = System.nanoTime();
-        method.run();
-        long endTime = System.nanoTime();
-        return endTime - startTime;
+public static int[] randomArrayAscendingSimple(int length, int lowerBound, int upperBound) {
+        int[] ints = randomArray(length, lowerBound, upperBound);
+        Arrays.sort(ints);
+        return ints;
     }
 ```
+```java
+public static int[] randomArrayDescendingSimple(int length, int lowerBound, int upperBound) {
+        int[] ints = randomArray(length, lowerBound, upperBound);
+        Arrays.sort(ints);
+        return reverse(ints);
+    }
+
+public static int[] reverse(int[] ints) {
+        int[] reverse = new int[ints.length];
+        for (int i = 0; i < ints.length; i++) reverse[i] = ints[ints.length - i - 1];
+        return reverse;
+    }
+```
+
+
+# Risultati 
+
+## Caso 10 Elementi
+```
+Il randomArray() 10:           [940, 9354, 9037, 8472, 2390, 9610, 9359, 3863, 1007, 9504]
+Il randomArrayAscending() 10:  [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Il randomArrayDescending() 10: [9504, 1007, 3863, 9359, 9610, 2390, 8472, 9037, 9354, 940]
+
+TABELLA DEI TEMPI DI INSERTION SORT
+Il randomArray() ordinato:           [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Il randomArrayAscending() ordinato:  [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Il randomArrayDescending() ordinato: [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Execution Time di Insertion sort su randomArray():           1089975 ns.
+Execution Time di Insertion sort su randomArrayAscending():  3918 ns.
+Execution Time di Insertion sort su randomArrayDescending(): 4532 ns.
+
+TABELLA DEI TEMPI DI BUBBLE SORT
+Il randomArray() ordinato:           [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Il randomArrayAscending() ordinato:  [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Il randomArrayDescending() ordinato: [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
+Execution Time di Bubble sort su randomArray():              655794 ns.
+Execution Time di Bubble sort su randomArrayAscending():     4258 ns.
+Execution Time di Bubble sort su randomArrayDescending():    7248 ns.
+```
+## Caso 100 Elementi
+```
+Il randomArray() 100:           [2906, ..., 5199]
+Il randomArrayAscending() 100:  [241, ..., 9941]
+Il randomArrayDescending() 100: [5199, ..., 2906]
+
+TABELLA DEI TEMPI DI INSERTION SORT
+Il randomArray() ordinato:           [241, ..., 9941]
+Il randomArrayAscending() ordinato:  [241, ..., 9941]
+Il randomArrayDescending() ordinato: [241, ..., 9941]
+Execution Time di Insertion sort su randomArray():           786695 ns.
+Execution Time di Insertion sort su randomArrayAscending():  8776 ns.
+Execution Time di Insertion sort su randomArrayDescending(): 78606 ns.
+
+TABELLA DEI TEMPI DI BUBBLE SORT 
+Il randomArray() ordinato:           [241, ..., 9941]
+Il randomArrayAscending() ordinato:  [241, ..., 9941]
+Il randomArrayDescending() ordinato: [241, ..., 9941]
+Execution Time di Bubble sort su randomArray():              703961 ns.
+Execution Time di Bubble sort su randomArrayAscending():     7340 ns.
+Execution Time di Bubble sort su randomArrayDescending():    216395 ns.
+```
+## Caso 1000 Elementi
+```
+Il randomArray() 1000:           [8605, ..., 7366]
+Il randomArrayAscending() 1000:  [9, ..., 9999]
+Il randomArrayDescending() 1000: [7366, ..., 8605]
+
+TABELLA DEI TEMPI DI INSERTION SORT
+Il randomArray() ordinato:           [9, ..., 9999]
+Il randomArrayAscending() ordinato:  [9, ..., 9999]
+Il randomArrayDescending() ordinato: [9, ..., 9999]
+Execution Time di Insertion sort su randomArray():           5276820 ns.
+Execution Time di Insertion sort su randomArrayAscending():  15631 ns.
+Execution Time di Insertion sort su randomArrayDescending(): 2960514 ns.
+
+TABELLA DEI TEMPI DI BUBBLE SORT
+Il randomArray() ordinato:           [9, ..., 9999]
+Il randomArrayAscending() ordinato:  [9, ..., 9999]
+Il randomArrayDescending() ordinato: [9, ..., 9999]
+Execution Time di Bubble sort su randomArray():              11984810 ns.
+Execution Time di Bubble sort su randomArrayAscending():     13465 ns.
+Execution Time di Bubble sort su randomArrayDescending():    14922974 ns.
+```
+
 # Membri del gruppo
 I membri partecipanti al lavoro di gruppo sono:  
 - [Casagrande Stefano](https://github.com/csgs104)
