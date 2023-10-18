@@ -132,9 +132,11 @@ public static int[] reverse(int[] ints) {
 
 
 # Risultati 
+Abbiamo valutato le prestazioni di Insertion Sort e Bubble Sort per array di interi di lunghezza crescente (10, 100, 1000, 10000) generati casualemnte su un intervallo da 0 a 10000
 
 ## Caso 10 Elementi
 ```
+Intervallo elementi da 0 a 10000
 Il randomArray() 10:           [940, 9354, 9037, 8472, 2390, 9610, 9359, 3863, 1007, 9504]
 Il randomArrayAscending() 10:  [940, 1007, 2390, 3863, 8472, 9037, 9354, 9359, 9504, 9610]
 Il randomArrayDescending() 10: [9504, 1007, 3863, 9359, 9610, 2390, 8472, 9037, 9354, 940]
@@ -157,6 +159,7 @@ Execution Time di Bubble sort su randomArrayDescending():    7248 ns.
 ```
 ## Caso 100 Elementi
 ```
+Intervallo elementi da 0 a 10000
 Il randomArray() 100:           [2906, ..., 5199]
 Il randomArrayAscending() 100:  [241, ..., 9941]
 Il randomArrayDescending() 100: [5199, ..., 2906]
@@ -179,6 +182,7 @@ Execution Time di Bubble sort su randomArrayDescending():    216395 ns.
 ```
 ## Caso 1000 Elementi
 ```
+Intervallo elementi da 0 a 10000
 Il randomArray() 1000:           [8605, ..., 7366]
 Il randomArrayAscending() 1000:  [9, ..., 9999]
 Il randomArrayDescending() 1000: [7366, ..., 8605]
@@ -198,6 +202,51 @@ Il randomArrayDescending() ordinato: [9, ..., 9999]
 Execution Time di Bubble sort su randomArray():              11984810 ns.
 Execution Time di Bubble sort su randomArrayAscending():     13465 ns.
 Execution Time di Bubble sort su randomArrayDescending():    14922974 ns.
+```
+## Caso 10000 Elementi
+```
+Intervallo elementi da 0 a 10000
+Il randomArray() 10000:           [52221, ... ]
+Il randomArrayAscending() 10000:  [1, ... ]
+Il randomArrayDescending() 10000: [14944, ... ]
+
+TABELLA DEI TEMPI DI INSERTION SORT
+Il randomArray() ordinato:           [1, … ]
+Il randomArrayAscending() ordinato:  [1, ... ]
+Il randomArrayDescending() ordinato: [1, … ]
+Execution Time di Insertion sort su randomArray():           50798686 ns.
+Execution Time di Insertion sort su randomArrayAscending():  120592 ns.
+Execution Time di Insertion sort su randomArrayDescending(): 47985447 ns.
+
+TABELLA DEI TEMPI DI BUBBLE SORT
+Il randomArray() ordinato:           [1, … ]
+Il randomArrayAscending() ordinato:  [1, ... ]
+Il randomArrayDescending() ordinato: [1, … ]
+Execution Time di Bubble sort su randomArray():              265722228 ns.
+Execution Time di Bubble sort su randomArrayAscending():     76343 ns.
+Execution Time di Bubble sort su randomArrayDescending():    230632257 ns.
+```
+## Riassumendo
+```
+Lunghezza = 10                              INSERTION SORT        BUBBLE SORT
+Execution Time su randomArray():            1089975               655794
+Execution Time su randomArrayAscending():   3918                  4258 
+Execution Time su randomArrayDescending():  4532                  7248
+
+Lunghezza = 100
+Execution Time su randomArray():            786695                703961 
+Execution Time su randomArrayAscending():   8776                  7340
+Execution Time su randomArrayDescending():  78606                 216395
+
+Lunghezza = 1000
+Execution Time su randomArray():            5276820               11984810
+Execution Time su randomArrayAscending():   15631                 13465 
+Execution Time su randomArrayDescending():  2960514               14922974
+
+Lunghezza = 10000
+Execution Time su randomArray():            50798686              265722228 
+Execution Time su randomArrayAscending():   120592                76343
+Execution Time su randomArrayDescending():  47985447              230632257 
 ```
 
 # Membri del gruppo
