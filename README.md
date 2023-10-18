@@ -33,7 +33,7 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
     }
 ```
 # Analisi Complessità
-Il caso ottimo per l'algoritmo è quello in cui la sequenza di partenza sia già ordinata. In questo caso, l'algoritmo ha tempo di esecuzione lineare, ossia 
+Il  caso ottimo  per l'algoritmo è quello in cui la sequenza di partenza sia già ordinata. In questo caso, l'algoritmo ha tempo di esecuzione lineare, ossia 
 O(n).
 
 Il caso pessimo è invece quello in cui la sequenza di partenza sia ordinata al contrario. In questo caso, ogni iterazione dovrà scorrere e spostare ogni elemento della sottosequenza ordinata prima di poter inserire il primo elemento della sottosequenza non ordinata. 
