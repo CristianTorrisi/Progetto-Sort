@@ -12,7 +12,26 @@
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Insert Sort che mi restituisce un array di numeri interi casuali ordinato. 
 
   ![use-template](https://github.com/CristianTorrisi/Progetto-Sort/assets/146428019/c0b0e6a4-bcd6-488d-b34e-8fca374e3c0a)
+```java
+    public static int[] returnSort(int[] array_source){
+        int[] array_sorted = new int[array_source.length];
+        int value_current;
+        int j;
 
+        for(int i=0; i<array_source.length;i++){
+            value_current = array_source[i];
+            j= i-1;
+
+            while (j>=0 && array_source[j] > value_current){
+                array_source[j+1] = array_source[j];
+                j =j -1;
+            }
+            array_source[j+1] = value_current;
+        }
+        array_sorted = array_source;
+        return array_sorted;
+    }
+```
 
 ## Bubble Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Bubble Sort che mi restituisce un array di numeri interi casuali ordinato. 
