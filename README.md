@@ -32,6 +32,10 @@ Dato come parametro l'array di interi generati casualmente,implento l'algoritmo 
         return array_sorted;
     }
 ```
+# Analisi Complessità
+Il caso ottimo per l'algoritmo è quello in cui la sequenza di partenza sia già ordinata. In questo caso, l'algoritmo ha tempo di esecuzione lineare, ossia 
+O(n). Infatti, in questo caso, in ogni iterazione il primo elemento della sottosequenza non ordinata viene confrontato solo con l'ultimo della sottosequenza ordinata. Il caso pessimo è invece quello in cui la sequenza di partenza sia ordinata al contrario. In questo caso, ogni iterazione dovrà scorrere e spostare ogni elemento della sottosequenza ordinata prima di poter inserire il primo elemento della sottosequenza non ordinata. Pertanto, in questo caso l'algoritmo di insertion sort ha complessità temporale quadratica, ossia O(n^2)
+
 
 ## Bubble Sort 
 Dato come parametro l'array di interi generati casualmente,implento l'algoritmo di ordinamento Bubble Sort che mi restituisce un array di numeri interi casuali ordinato. 
